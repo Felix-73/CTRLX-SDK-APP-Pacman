@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+mkdir $SNAP_DATA/package-run
+mkdir $SNAP_DATA/package-run/pacman
+cd $SNAP/bin/Flask/
+
+
+python3 app.py
+
+
+
+exit 1
+
+

@@ -1,0 +1,35 @@
+{
+    "$schema": "https://json-schema.boschrexroth.com/ctrlx-automation/ctrlx-core/apps/package-manifest/package-manifest.v1.3.schema.json",
+    "version": "1.0.0",
+    "id": "pacman",
+        "services": {
+      "proxyMapping": [
+        {
+          "name": "pacman-server",
+          "url": "/pacman",
+          "binding": "unix://{$SNAP_DATA}/package-run/pacman/example.sock"    
+        }
+      ]
+    },
+    "menus": {
+      "sidebar": [
+        {
+          "id": "pacman",
+          "target": "_blank",
+          "title": "pacman",
+          "icon": "bosch-ic-automation",
+          "link": "/pacman"
+        }
+      ],
+      "settings": [
+      ],
+      "overview": [
+        {
+          "id": "pacman-server",
+          "title": "pacman",
+          "icon": "Bosch-Ic-worldwideweb",
+          "link": "/pacman"
+        }
+      ]    
+    }
+  }
