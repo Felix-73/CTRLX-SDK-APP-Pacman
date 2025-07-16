@@ -7,7 +7,7 @@
 ![image](/img/image2.png)
 ![image](/img/image3.png)
 
-- ctrlx en 192.168.1.18
+- ctrlx en localhost
 - défninir un robot cartisien pacManRobot
 
 ## Scrore à battre :
