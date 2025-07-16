@@ -7,10 +7,11 @@ description: CtrlX > World
 
 confinement: strict
 grade: stable
-# Limit architectures as ppcel64 doesn't build currently
 architectures:
-  - build-on: amd64
-  - build-on: arm64
+  - build-on: [amd64, arm64]
+    build-for: [amd64]
+  - build-on: [amd64, arm64]
+    build-for: [arm64]
 
 apps:
 
